@@ -20,6 +20,4 @@ HighScoresForCountries Boarder main component // be descriptive
   HighScore components  green inner boarder
      HighScore light blue h2 
      HighScoreData component table 
-
-
 */
