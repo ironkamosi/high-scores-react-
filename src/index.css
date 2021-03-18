@@ -25,6 +25,7 @@ margin: 2em;
 
 .retro-font-h2{
  font-family: 'Press Start 2P', cursive	; 
+ font-size: 2.2em;
  color: #63D1F4;
 }
 
@@ -40,17 +41,18 @@ font-size: 3em;
 
 .retro-font-scores{
  font-family: 'Press Start 2P', cursive	; 
- color: #801010;
+ color: #b81616;
 }
 
-.rowScoreData{
+/* .rowScoreData{
 border: 0.5em black solid;
-background-color: #eee;         
-margin-right: 5em;
-}
+border-width: em;
+padding-right: 5em;
+} */
 
-.score-table{
-border: 0.2em green solid;
+tr{
+border: black solid;
+border-width: 3px;
 display:block;
 padding: 2em;
 }
