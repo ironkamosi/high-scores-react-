@@ -13,12 +13,32 @@ code {
 }
 
 .green-boarder{
-border: 0.5em greenyellow solid;
+border: 1em greenyellow solid;
 
 }
 
 .blue-boarder{
 border: 0.5em blue solid;
+
+}
+
+.retro-font-h2{
+ font-family: 'Press Start 2P', cursive	; 
+ color: #63D1F4;
+}
+
+.retro-font-names{
+ font-family: 'Press Start 2P', cursive	; 
+ color: #000000;
+}
+
+.retro-font-scores{
+ font-family: 'Press Start 2P', cursive	; 
+ color: #801010;
+}
+
+.rowScoreData{
+border: 0.5em black solid;
 
 }
 

@@ -1,22 +1,34 @@
-import React from "react"
+import React from "react";
 const TableBody = ({ scores }) => {
-  return(
-  <table className="table table-hover table-dark">
-      
+  const compare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
+    // if (scoreOne.s < scoreTwo.s) {
+    //   return 1;
+    // }
+    // if (scoreOne.s > scoreTwo.s) {
+    //   return -1;
+    // } 
+    //   return 0;
+  
+  const sortedCountryScores = scores.sort(compare);
+
+  return (
+    <table className="table table-hover table-dark">
       <tbody>
-        {scores.map((scoreData) => {
+        {sortedCountryScores.map((scoreData, index) => {
           return (
-            <tr>
-              <td>
-                {scoreData.n} {scoreData.s}
+            <tr key={index+200} className="rowScoreData">
+              <td className="retro-font-names" key={index}>
+                {scoreData.n}
+              </td>
+              <td className="retro-font-scores" key={index + 100}>
+                {scoreData.s}
               </td>
             </tr>
           );
         })}
-    </tbody>
+      </tbody>
     </table>
-  )
-}
+  );
+};
 
 export default TableBody;
-
