@@ -16,8 +16,10 @@ const CountriesScoreContainer = (props) => {
  let sortedData = props.scoresForCountries.sort(compare);  
   return (
     <div className="blue-boarder">
+      <h1 className="high-scores-countries-title">High Scores Per Country</h1>
       {sortedData.map((singleCountry, index) => {
-        return <CountryScoreContainer key={index} singleCountryData={singleCountry} />;
+        return (
+          <CountryScoreContainer key={index} singleCountryData={singleCountry} />)
       })}
     </div>
   );

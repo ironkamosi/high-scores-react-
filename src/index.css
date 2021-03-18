@@ -14,12 +14,13 @@ code {
 
 .green-boarder{
 border: 1em greenyellow solid;
-
+margin: 2em;
+padding-bottom: 5em;
 }
 
 .blue-boarder{
 border: 0.5em blue solid;
-
+margin: 2em;
 }
 
 .retro-font-h2{
@@ -27,6 +28,11 @@ border: 0.5em blue solid;
  color: #63D1F4;
 }
 
+.high-scores-countries-title{
+font-family: 'Press Start 2P', cursive	; 
+font-size: 3em;
+ color: #63D1F4; 
+}
 .retro-font-names{
  font-family: 'Press Start 2P', cursive	; 
  color: #000000;
@@ -39,7 +45,13 @@ border: 0.5em blue solid;
 
 .rowScoreData{
 border: 0.5em black solid;
-
+background-color: #eee;         
+margin-right: 5em;
 }
 
+.score-table{
+border: 0.2em green solid;
+display:block;
+padding: 2em;
+}
 

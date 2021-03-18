@@ -12,17 +12,20 @@ const TableBody = ({ scores }) => {
   const sortedCountryScores = scores.sort(compare);
 
   return (
+    
     <table className="table table-hover table-dark">
-      <tbody>
+      <tbody className="table-body-border">
         {sortedCountryScores.map((scoreData, index) => {
           return (
-            <tr key={index+200} className="rowScoreData">
-              <td className="retro-font-names" key={index}>
-                {scoreData.n}
-              </td>
-              <td className="retro-font-scores" key={index + 100}>
-                {scoreData.s}
-              </td>
+            <tr key={index + 200} className="rowScoreData">
+              <div className="score-table">
+                <td className="retro-font-names" key={index}>
+                  {scoreData.n}
+                </td>
+                <td className="retro-font-scores" key={index + 100}>
+                  {scoreData.s}
+                  </td>
+              </div>
             </tr>
           );
         })}
