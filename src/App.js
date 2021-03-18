@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import CountriesScoreContainer from "./CountriesScoreContainer.js";
+import allCountryScores from "./scores.js";
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CountriesScoreContainer scoresForCountries={allCountryScores} />
     </div>
   );
 }
 
 export default App;
+/*
+Components
+
+HighScoresForCountries Boarder main component // be descriptive
+ h1 HighScore title components 
+  HighScore components  green inner boarder
+     HighScore light blue h2 
+     HighScoreData component table 
+
+
+*/

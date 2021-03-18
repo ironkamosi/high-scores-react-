@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.green-boarder{
+border: 0.5em greenyellow solid;
+
+}
+
+.blue-boarder{
+border: 0.5em blue solid;
+
+}
+
+
