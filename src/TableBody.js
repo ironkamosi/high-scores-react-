@@ -17,14 +17,12 @@ const TableBody = ({ scores }) => {
         {sortedCountryScores.map((scoreData, index) => {
           return (
             <tr key={index + 200} className="rowScoreData">
-              <div className="score-table">
                 <td className="retro-font-names" key={index}>
                   {scoreData.n.toUpperCase()}
                 </td>
                 <td className="retro-font-scores" key={index + 100}>
                   {scoreData.s}
                   </td>
-              </div>
             </tr>
           );
         })}

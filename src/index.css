@@ -1,3 +1,10 @@
+div, h2,h1,tr,td,th,tbody{
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  border: 0px none;
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,39 +18,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.green-boarder{
-border: 1em greenyellow solid;
-margin: 2em;
-padding-bottom: 5em;
-}
+/*-------------------------------------------------*/
 
 .blue-boarder{
 border: 0.5em blue solid;
-margin: 2em;
+margin: 2em auto;
+padding: 2em;
+width: 90%;
+}
+.high-scores-countries-title{ 
+font-family: 'Press Start 2P', cursive	; 
+font-size: 3em;
+color: #63D1F4; 
+margin-top: 1em;
+margin-bottom: 1em;
+border: 1px solid pink;
+}
+
+.green-boarder{
+border: 2em greenyellow solid;
+padding: 0em 2em 5em;
+margin: 2em auto; 
+width: 100%;
+
 }
 
 .retro-font-h2{
  font-family: 'Press Start 2P', cursive	; 
  font-size: 2.2em;
  color: #63D1F4;
+ margin: 2em;
+}
+/*-------------------------------------------------*/
+
+table {
+width: 100%;
 }
 
-.high-scores-countries-title{
+tr{
+border: 2px black solid;
+border-width: 3px;
+width:100%;
+display:block;
+padding: 3em;
+}
+/*-------------------------------------------------*/
+td{
 font-family: 'Press Start 2P', cursive	; 
-font-size: 3em;
- color: #63D1F4; 
+display:inline-block;
+width: 50%;
+text-align: right;
 }
 .retro-font-names{
- font-family: 'Press Start 2P', cursive	; 
  color: #000000;
+font-size: 1.4em;
+
 }
 
 .retro-font-scores{
- font-family: 'Press Start 2P', cursive	; 
- color: #b81616;
- /* padding-left: 5em; */
- 
+color: #b81616; 
+font-size: 2em;
+
 }
 
 /* .rowScoreData{
@@ -52,10 +87,4 @@ border-width: em;
 padding-right: 5em;
 } */
 
-tr{
-border: black solid;
-border-width: 3px;
-display:block;
-padding: 3em;
-}
 
