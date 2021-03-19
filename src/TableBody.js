@@ -16,7 +16,6 @@ const TableBody = ({ scores }) => {
       <tbody className="table-body-border">
         {sortedCountryScores.map((scoreData, index) => {
           return (
-            
             <tr key={index + 200} className="rowScoreData">
               <div className="score-table">
                 <td className="retro-font-names" key={index}>
