@@ -16,13 +16,9 @@ const TableBody = ({ scores }) => {
       <tbody className="table-body-border">
         {sortedCountryScores.map((scoreData, index) => {
           return (
-            <tr key={index + 200} className="rowScoreData">
-                <td className="retro-font-names" key={index}>
-                  {scoreData.n.toUpperCase()}
-                </td>
-                <td className="retro-font-scores" key={index + 100}>
-                  {scoreData.s}
-                  </td>
+            <tr key={index} className="rowScoreData">
+              <td className="retro-font-names">{scoreData.n.toUpperCase()}</td>
+              <td className="retro-font-scores">{scoreData.s}</td>
             </tr>
           );
         })}
