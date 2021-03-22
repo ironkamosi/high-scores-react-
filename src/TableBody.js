@@ -1,6 +1,7 @@
 import React from "react";
-const TableBody = ({ scores }) => {
-  const compare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
+const TableBody = ({ scores, compare }) => {
+
+  // const compare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
     // if (scoreOne.s < scoreTwo.s) {
     //   return 1;
     // }
@@ -10,7 +11,6 @@ const TableBody = ({ scores }) => {
     //   return 0;
   
   const sortedCountryScores = scores.sort(compare);
-  
   return (
     <table className="table table-hover table-dark">
       <tbody className="table-body-border">
