@@ -1,5 +1,5 @@
 import React from "react";
-import allCountryScores from "scores";
+import allCountryScores from "./scores.js";
 
 const WorldTableBody = (_) => {
   const descendingCompare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
@@ -10,7 +10,8 @@ const WorldTableBody = (_) => {
   // const sortedData = allCountryScores.sort(descendingCompare)
 
   const worldData = allCountryScores.sort(descendingCompare).map((element) => {
-    console.log("test", element.scores);
+    // console.log("test", element.scores);
+    console.log(element.scores)
     return element.scores;
   });
 
@@ -20,10 +21,13 @@ const WorldTableBody = (_) => {
       <table className="table table-hover table-dark">
         <tbody className="table-body-border">
           {worldData.map((scoreData, index) => {
+            // console.log("test", worldData);
+            console.log("test",scoreData[0].n)
             return (
               <tr key={index} className="rowScoreData">
                 <td className="retro-font-names">
-                  {scoreData.n.toUpperCase()}
+                  {scoreData[0].n.toUpperCase()}
+                  {scoreData[0].s}
                 </td>
                 <td className="retro-font-scores">{scoreData.s}</td>
               </tr>

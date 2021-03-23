@@ -1,6 +1,6 @@
 import CountriesScoreContainer from "./CountriesScoreContainer.js";
-import allCountryScores from "scores";
-import WorldTableBody from "WorldTableBody"
+import allCountryScores from "./scores.js";
+import WorldTableBody from "./WorldTableBody.js"
 import './App.css';
 
 function App() {
