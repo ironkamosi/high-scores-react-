@@ -1,25 +1,37 @@
-// import React from "react";
-// const WorldTable = ({ scores }) => {
-//   const compare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
+import React from "react";
+import allCountryScores from "allCountryScores";
 
-//   const sortedCountryScores = scores.sort(compare);
+const WorldTableBody = (_) => {
+  const descendingCompare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
+  // method channing return a object that returns another method
+  // const worldData = allCountryScores.sort(descendingCompare).map(element => {
+  //   return element.scores;
+  // })
+  // const sortedData = allCountryScores.sort(descendingCompare)
 
-//   return (
-//     <table className="table table-hover table-dark">
-//       <tbody>
-//         {sortedCountryScores.map((scoreData, index) => {
-//           return (
-//             <tr key={index + 200} className="rowScoreData">
-//               <td className="retro-font-scores" key={index + 100}>
-//                 {scoreData.s}
-//               </td>
-//             </tr>
-//           );
-//         })}
-//       </tbody>
-//     </table>
-//   );
-// };
+  const worldData = allCountryScores.sort(descendingCompare).map((element) => {
+    return element.scores;
+  });
 
+  // let sortedWorldData = worldData.sort(compare)
+  return (// use wtb in dark mode
+    <div className="world-table-border"> 
+      <table className="table table-hover table-dark">
+        <tbody className="table-body-border">
+          {worldData.map((scoreData, index) => {
+            return (
+              <tr key={index} className="rowScoreData">
+                <td className="retro-font-names">
+                  {scoreData.n.toUpperCase()}
+                </td>
+                <td className="retro-font-scores">{scoreData.s}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
-// export default WorldTable;
+export default WorldTableBody;
