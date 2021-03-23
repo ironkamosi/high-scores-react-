@@ -1,5 +1,5 @@
 import React from "react";
-import allCountryScores from "allCountryScores";
+import allCountryScores from "scores";
 
 const WorldTableBody = (_) => {
   const descendingCompare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
@@ -10,6 +10,7 @@ const WorldTableBody = (_) => {
   // const sortedData = allCountryScores.sort(descendingCompare)
 
   const worldData = allCountryScores.sort(descendingCompare).map((element) => {
+    console.log("test", element.scores);
     return element.scores;
   });
 
