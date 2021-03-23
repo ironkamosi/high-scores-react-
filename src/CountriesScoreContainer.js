@@ -15,7 +15,7 @@ function compare(countryOne, countryTwo) {
 
 // 0 descending 1 ascending
 const descendingCompare = (scoreOne, scoreTwo) => scoreTwo.s - scoreOne.s;
-const ascendingCompare = (scoreOne, scoreTwo) => -scoreOne.s - scoreTwo.s;
+const ascendingCompare = (scoreOne, scoreTwo) => scoreOne.s - scoreTwo.s;
 
 const CountriesScoreContainer = (props) => {
   const [toggle, setToggle] = useState({
@@ -23,12 +23,13 @@ const CountriesScoreContainer = (props) => {
     compare: descendingCompare
   });
   const toggleCompare = () => {
-    console.log(toggle)
+    // console.log(toggle)
     // alert("Wake up")
-    if (toggle === 0) {
+    if (toggle.state === 0) {
       setToggle({
         state: 1,
-      compare: ascendingCompare});
+        compare: ascendingCompare
+      });
     } else {
       setToggle({
         state: 0,
