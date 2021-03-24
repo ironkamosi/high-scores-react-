@@ -1,90 +1,83 @@
-div, h2,h1,tr,td,th,tbody{
+div,
+h2,
+h1,
+tr,
+td,
+th,
+tbody {
   margin: 0em;
   padding: 0em;
   box-sizing: border-box;
   border: 0px none;
-
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 /*-------------------------------------------------*/
 
-.blue-boarder{
-border: 0.3em blue solid;
-margin: 2em auto;
-padding: 2em;
-width: 65%;
+.blue-boarder {
+  border: 0.3em blue solid;
+  margin: 2em auto;
+  padding: 2em;
+  width: 65%;
 }
-.high-scores-countries-title{ 
-font-family: 'Press Start 2P', cursive	; 
-font-size: 2.4em;
-color: #63D1F4; 
-margin-top: 1em;
-margin-bottom: 1em;
-/* border: 1px solid pink; */
-}
-
-.green-boarder{
-border: 2em greenyellow solid;
-padding: 0em 2em 5em;
-margin: 2em auto; 
-width: 100%;
-
+.high-scores-countries-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.4em;
+  color: #63d1f4;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.retro-font-h2{
- font-family: 'Press Start 2P', cursive	; 
- font-size: 1.6em;
- color: #63D1F4;
- margin: 2em;
+.green-boarder {
+  border: 2em greenyellow solid;
+  padding: 0em 2em 5em;
+  margin: 2em auto;
+  width: 100%;
+}
+
+.retro-font-h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.6em;
+  color: #63d1f4;
+  margin: 2em;
 }
 /*-------------------------------------------------*/
 
 table {
-width: 100%;
+  width: 100%;
 }
 
-tr{
-border: 2px black solid;
-border-width: 3px;
-width:100%;
-display:block;
-padding: 3em;
+tr {
+  border: 2px black solid;
+  border-width: 3px;
+  width: 100%;
+  display: block;
+  padding: 3em;
 }
 /*-------------------------------------------------*/
-td{
-font-family: 'Press Start 2P', cursive	; 
-display:inline-block;
-width: 50%;
-text-align: right;
+td {
+  font-family: "Press Start 2P", cursive;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
 }
-.retro-font-names{
- color: #000000;
-font-size: 1.4em;
-
-}
-
-.retro-font-scores{
-color: #b81616; 
-font-size: 2em;
-
+.retro-font-names {
+  color: #000000;
+  font-size: 1.4em;
 }
 
-/* .rowScoreData{
-border: 0.5em black solid;
-border-width: em;
-padding-right: 5em;
-} */
-
-
+.retro-font-scores {
+  color: #b81616;
+  font-size: 2em;
+}

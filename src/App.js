@@ -1,13 +1,14 @@
 import CountriesScoreContainer from "./CountriesScoreContainer.js";
 import allCountryScores from "./scores.js";
-import WorldTableBody from "./WorldTableBody.js"
+import WorldScoreContainer from "./WorldScoreContainer.js"
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
+      <WorldScoreContainer />
       <CountriesScoreContainer scoresForCountries={allCountryScores} />
-      <WorldTableBody/>
     </div>
   );
 }

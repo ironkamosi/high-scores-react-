@@ -23,8 +23,7 @@ const CountriesScoreContainer = (props) => {
     compare: descendingCompare
   });
   const toggleCompare = () => {
-    // console.log(toggle)
-    // alert("Wake up")
+  
     if (toggle.state === 0) {
       setToggle({
         state: 1,
@@ -37,17 +36,8 @@ const CountriesScoreContainer = (props) => {
       })
     }
   };
-  // const [title, setTitle] = useState("Per Country");
-
-  // function worstScores() {
-  //   if (title === "Per Country") {
-  //     setTitle("Worst scores");
-  //   } else {
-  //     setTitle("Per Country");
-  //   }
-  // }
+ 
   let sortedData = props.scoresForCountries.sort(compare);
-  // console.log(title, "title");
   return (
     <div className="blue-boarder">
      
@@ -67,15 +57,3 @@ const CountriesScoreContainer = (props) => {
 };
 
 export default CountriesScoreContainer;
-
-//{props.name}
- {
-   /* <button onClick={() => {setTitle("Worldwide")}}>
-        Toggle
-      </button>
-       */
- }
- {
-   /* <button onClick={worstScores}>Worst Scores</button>
-    */
- }
